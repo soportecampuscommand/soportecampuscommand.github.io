@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Campus Command</title>
+  <meta name="description" content="Cómo Campus Command trata los datos de los estudiantes.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="index.html"><img src="logo.png" alt="">Campus Command</a>
+      <nav><a href="index.html">Inicio</a></nav>
+    </div>
+  </header>
+
+  <main class="documento contenedor">
+    <h1>Política de privacidad</h1>
+    <p class="fecha">Última actualización: 12 de octubre de 2026</p>
+
+    <h2>1. Quiénes somos</h2>
+    <p>Campus Command es un asistente académico para estudiantes universitarios que usan D2L Brightspace. El responsable del tratamiento de los
+      datos es <strong>Pablo Vega</strong>, persona natural, RUC <strong>1105883399001</strong>, con domicilio en
+      <strong>Quito</strong>, Ecuador. Contacto de privacidad: <a href="mailto:soportecampuscommand@gmail.com">soportecampuscommand@gmail.com</a>.</p>
+
+    <h2>2. Qué datos tratamos</h2>
+    <p>Solo los necesarios para que el asistente funcione, y solo los de las cuentas que el propio estudiante conecta:</p>
+    <ul>
+      <li><strong>Cuenta en la app:</strong> nombre y correo electrónico.</li>
+      <li><strong>D2L Brightspace (con su autorización):</strong> la sesión que el estudiante abre en la app, para leer sus cursos, contenidos,
+        deberes, fechas, calificaciones, noticias y sílabos, y para entregar deberes cuando él lo confirma.</li>
+      <li><strong>Google Drive (con su autorización):</strong> solo los archivos que la app crea en su Drive (sus deberes, documentos y
+        presentaciones) o que el estudiante le entrega. La app no puede ver el resto de su Drive.</li>
+      <li><strong>Gmail (opcional, con su autorización):</strong> solo el permiso de <strong>enviar</strong> correos en su nombre y su
+        dirección de correo. El asistente no lee, no busca ni borra sus correos. Los correos a otras personas los confirma el estudiante antes
+        de que salgan; los avisos de su propio asistente (cuando empieza y termina un deber, o cuando tiene una duda) le llegan solos, solo al
+        correo que él mismo eligió para eso.</li>
+      <li><strong>Lo que el estudiante escribe y adjunta en el chat</strong>, y las respuestas del asistente.</li>
+      <li><strong>Audio (opcional):</strong> si el estudiante dicta por voz o adjunta un audio, se envía a nuestro servidor en Google Cloud
+        y se convierte en texto con el servicio de reconocimiento de voz de Google (Speech-to-Text). El audio <strong>no se guarda</strong>:
+        solo vuelve el texto, que aparece en el chat para que el estudiante lo revise antes de enviarlo. Sin internet, el audio se convierte
+        en texto en su propia computadora (la primera vez la app descarga ese modelo de voz desde Hugging Face, sin datos del estudiante).</li>
+      <li><strong>Preferencias</strong> que el estudiante aprueba (por ejemplo, cómo quiere sus deberes) y el material de sus cursos que el
+        asistente guarda para estudiar con él.</li>
+      <li><strong>Datos técnicos de funcionamiento:</strong> registros de qué funciones se usaron y cuánto tardaron, sin el contenido del
+        estudiante.</li>
+    </ul>
+    <p>No pedimos ni guardamos contraseñas de D2L ni de Google: el estudiante inicia sesión directamente en esas plataformas.</p>
+
+    <h2>3. Para qué los usamos</h2>
+    <p>Exclusivamente para prestar el servicio que el estudiante pidió: avisarle de sus plazos, explicarle su material, preparar guías y
+      borradores, guardar sus documentos en su Drive, enviar los correos que él pide y, solo con su confirmación, entregar en D2L.
+      <strong>No vendemos datos, no los usamos para publicidad y no los compartimos con terceros para sus propios fines.</strong></p>
+
+    <h3>Uso de los datos de Google</h3>
+    <p>El uso que hace Campus Command de la información recibida de las API de Google cumple la
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de
+      Google</a>, incluidos los requisitos de Uso Limitado. Los datos de Google Drive se usan solo para leer y guardar los documentos que el
+      estudiante trabaja con el asistente, y el permiso de Gmail solo para enviar los correos que él confirma. No se transfieren a terceros
+      salvo lo necesario para prestar el servicio (sección 5), no se usan para publicidad y no se usan para entrenar modelos de inteligencia
+      artificial generales.</p>
+
+    <h2>4. Dónde se guardan y cómo se protegen</h2>
+    <ul>
+      <li>En servidores de <strong>Google Cloud</strong> en Estados Unidos.</li>
+      <li>Lo que se guarda de cada estudiante (accesos a D2L, Drive y Gmail, archivos y preferencias) se cifra con una clave propia de esa
+        persona.</li>
+      <li>Cada estudiante tiene su propio espacio: los datos de una persona no se mezclan con los de otra.</li>
+      <li>El acceso administrativo está limitado al responsable del servicio y queda registrado.</li>
+    </ul>
+
+    <h2>5. Con quién se comparten</h2>
+    <p>Solo con los proveedores que necesitamos para prestar el servicio, que procesan los datos en nuestro nombre:</p>
+    <ul>
+      <li><strong>Google Cloud</strong> (alojamiento y base de datos), <strong>Google Drive</strong> (donde el estudiante guarda sus documentos),
+        <strong>Gmail</strong> (los correos que el estudiante decide enviar y los avisos de su asistente) y <strong>Speech-to-Text de
+        Google</strong> (convierte en texto el audio que el estudiante dicta; no lo guarda).</li>
+      <li><strong>Anthropic</strong> (modelo de inteligencia artificial Claude), que procesa el texto de cada pedido para responderlo.</li>
+      <li><strong>D2L Brightspace</strong> de la universidad, solo para las acciones que el estudiante pide.</li>
+    </ul>
+
+    <h2>6. Cuánto tiempo los conservamos</h2>
+    <p>Mientras la cuenta esté activa. Si el estudiante pide darla de baja, sus datos se borran en un plazo de 30 días, salvo lo que la ley
+      obligue a conservar.</p>
+
+    <h2>7. Sus derechos</h2>
+    <p>El estudiante puede pedir en cualquier momento acceso, rectificación, eliminación, oposición o portabilidad de sus datos escribiendo a
+      <a href="mailto:soportecampuscommand@gmail.com">soportecampuscommand@gmail.com</a>, conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador.
+      También puede retirar el acceso a su Google Drive y Gmail desde
+      <a href="https://myaccount.google.com/permissions">la configuración de su cuenta de Google</a> y cerrar la sesión de D2L desde la app.</p>
+
+    <h2>8. Menores de edad</h2>
+    <p>El servicio es para estudiantes universitarios mayores de 18 años. Si se detecta que una cuenta pertenece a un menor, se da de baja y
+      sus datos se borran.</p>
+
+    <h2>9. Cambios a esta política</h2>
+    <p>Si cambiamos esta política, publicaremos la nueva versión en esta página con su fecha y avisaremos en la app.</p>
+
+    <h2>10. Contacto</h2>
+    <p>Pablo Vega · <a href="mailto:soportecampuscommand@gmail.com">soportecampuscommand@gmail.com</a> · Quito, Ecuador.</p>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <span>© 2026 Campus Command</span>
+      <span><a href="index.html">Inicio</a></span>
+    </div>
+  </footer>
+</body>
+</html>

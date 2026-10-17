@@ -1,0 +1,65 @@
+/* Sitio público de Campus Command (portada y política de privacidad). Sin recursos externos: nada se carga de otros servidores. */
+:root {
+  --fondo: #f6f9fd;
+  --superficie: #ffffff;
+  --texto: #1c2333;
+  --suave: #55607a;
+  --marca: #162447;
+  --acento: #2f6fd6;
+  --borde: #dde5f0;
+  --resalte: #ecf4fc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0f1522;
+    --superficie: #161e2e;
+    --texto: #e6ebf5;
+    --suave: #a5b0c7;
+    --marca: #dce6f7;
+    --acento: #7aa7f0;
+    --borde: #27324a;
+    --resalte: #1b2538;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+a { color: var(--acento); }
+.contenedor { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header.barra { border-bottom: 1px solid var(--borde); background: var(--superficie); }
+header.barra .contenedor { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
+.marca { display: flex; align-items: center; gap: 10px; color: var(--marca); text-decoration: none; font-weight: 700; font-size: 18px; }
+.marca img { width: 36px; height: 36px; border-radius: 9px; }
+nav a { color: var(--suave); text-decoration: none; font-size: 15px; }
+nav a:hover { color: var(--acento); }
+.portada { padding: 56px 0 32px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
+.portada h1 { font-size: 38px; line-height: 1.15; margin: 0 0 14px; color: var(--marca); letter-spacing: -0.02em; }
+.portada p { font-size: 18px; color: var(--suave); margin: 0; max-width: 560px; }
+.portada img { width: 168px; height: 168px; border-radius: 36px; box-shadow: 0 10px 30px rgba(22, 36, 71, 0.15); }
+.tarjetas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 8px 0 40px; }
+.tarjeta { background: var(--superficie); border: 1px solid var(--borde); border-radius: 14px; padding: 18px; }
+.tarjeta h3 { margin: 0 0 6px; font-size: 16px; color: var(--marca); }
+.tarjeta p { margin: 0; color: var(--suave); font-size: 15px; }
+.aviso { background: var(--resalte); border: 1px solid var(--borde); border-radius: 14px; padding: 18px 20px; margin-bottom: 40px; }
+.aviso h2 { margin: 0 0 8px; font-size: 18px; color: var(--marca); }
+.aviso ul { margin: 0; padding-left: 20px; }
+main.documento { padding: 40px 0 56px; }
+main.documento h1 { font-size: 30px; color: var(--marca); margin: 0 0 6px; }
+main.documento .fecha { color: var(--suave); margin: 0 0 28px; }
+main.documento h2 { font-size: 20px; color: var(--marca); margin: 32px 0 8px; }
+main.documento h3 { font-size: 17px; margin: 20px 0 6px; }
+main.documento li { margin: 4px 0; }
+footer { border-top: 1px solid var(--borde); color: var(--suave); font-size: 14px; }
+footer .contenedor { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 18px; padding-bottom: 24px; }
+@media (max-width: 640px) {
+  .portada { grid-template-columns: 1fr; padding-top: 32px; text-align: left; }
+  .portada img { width: 112px; height: 112px; border-radius: 26px; order: -1; }
+  .portada h1 { font-size: 30px; }
+  .tarjetas { grid-template-columns: 1fr; }
+  nav a { font-size: 14px; }
+}
